@@ -1,4 +1,4 @@
-# conan-server-vew
+# conan-server-view
 Is a front page to show the main info of our serve of Conan Exile's game. 
 Made by React + Vite + Redux toolkit
 
