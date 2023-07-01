@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/crom');
+:root{
+    --conan-primary-color: #DC9767;
+    --conan-primary-color-hover: #ab744e;
+    --conan-main-color: #ddc271;
+
+    --font-family: 'Raleway', sans-serif;
+    --conan-font-family: 'Crom', sans-serif;
+    --font-weight: 300;
+
+    --navbar-background: #0a0101;
+
+    --card-bg: rgba(10,0,0,0.9);
+    --card-font-color: #FFFFFF;
+}
+
+[data-theme="lemba-mode"] {
+    --conan-primary-color: red;
+    --conan-primary-color-hover: blue;
+    --conan-main-color: purple;
+    --navbar-background: yellow;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    margin: 0 auto;
+    background: transparent;
+    line-height: 1.5;
+}
+
+html {
+    background: url('./assets/background-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    letter-spacing: -2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: var(--conan-primary-color);
+
+    &:hover {
+        color: var(--conan-primary-color-hover);
+    }
+}
+
+/* COMPONENTS */
+.container {
+    padding-top: 50px;
+}
+
+.header {
+    padding: 50px 0px;
+    text-align: center;
+    background: url('./assets/texture-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-header, .card-footer {
+    border-color: #444444;
+}
+
+/* TEXTS */
+.conan-font {
+    font-family: var(--conan-font-family);
+    line-height: 50px;
+}
+
+.text-conan-primary {
+    color: var(--conan-primary-color);
+}
+
+.text-main-color {
+    color: var(--conan-main-color);
+}
+
+.page-title {
+    font-weight: 300;
+    font-size: 38px;
+}
+
+small {
+    font-size: 10px;
+}
+
+/* NEWS */
+.card {
+    background-color: var(--card-bg);
+    color: var(--card-font-color);
+    margin-bottom: 15px;
+}
+
+/* NAVBARS */
+.nav {
+    background-color: var(--navbar-background);
+    color: var(--main-color);
+    .nav-link {
+        color: var(--conan-primary-color);
+        &:hover, &:focus {
+            color: var(--conan-primary-color-hover);
+        }
+    }
+}
+
+
+
